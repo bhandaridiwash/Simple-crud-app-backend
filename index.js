@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
@@ -7,8 +6,8 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // In-memory data storage
 let items = [
@@ -85,6 +84,9 @@ app.put('/api/items/:id', (req, res) => {
   }
   
   if (name !== undefined) {
+    if (!name || name.trim() === '') {
+      return res.status(400).json({ error: 'Name cannot be empty' });
+    }
     items[itemIndex].name = name;
   }
   if (description !== undefined) {

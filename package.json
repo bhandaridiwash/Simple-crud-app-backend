@@ -8,11 +8,16 @@
     "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["crud", "api", "express", "rest", "backend"],
+  "keywords": [
+    "crud",
+    "api",
+    "express",
+    "rest",
+    "backend"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^2.2.2",
     "cors": "^2.8.5",
     "express": "^5.2.1"
   }

@@ -16,8 +16,7 @@ A simple RESTful API backend application built with Node.js and Express.js that 
 ## Tech Stack
 
 - **Node.js** - JavaScript runtime
-- **Express.js** - Web framework
-- **body-parser** - Request body parsing middleware
+- **Express.js** - Web framework (with built-in body parsing)
 - **CORS** - Cross-Origin Resource Sharing support
 
 ## Prerequisites
