@@ -1,0 +1,24 @@
+{
+  "name": "simple-crud-app-backend",
+  "version": "1.0.0",
+  "description": "A simple CRUD API backend built with Express.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crud",
+    "api",
+    "express",
+    "rest",
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1"
+  }
+}
